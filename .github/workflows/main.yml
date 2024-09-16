@@ -41,7 +41,7 @@ jobs:
             ${{ runner.os }}-${{ env.BUILD_TYPE }}-
 
       - name: Setup Cpp
-        uses: siamaktavakoli/setup-cpp@v1
+        uses: siamaktavakoli/ECE231_Assignment3@v1
         with:
           compiler: ${{ matrix.compiler }}
           vcvarsall: ${{ contains(matrix.os, 'windows') }}
