@@ -18,12 +18,12 @@ jobs:
           # - macos-14 # arm64
           # - macos-13
         compiler:
-          # - llvm
+          - llvm
           - gcc
           # you can specify the version after `-` like `llvm-18`.
         # include:
         #  - os: "windows-2022"
-            compiler: "msvc"
+            # compiler: "msvc"
     steps:
       - uses: actions/checkout@v3
       - name: Cache
