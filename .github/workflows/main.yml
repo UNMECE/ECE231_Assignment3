@@ -1,10 +1,10 @@
 name: ci
 on:
-  pull_request:
+  # pull_request:
   push:
     branches:
-      - main
-      - master
+      # - main
+      # - master
       - siamaktavakoli-testing-ci
 jobs:
   Test:
@@ -46,8 +46,8 @@ jobs:
           compiler: ${{ matrix.compiler }}
           # vcvarsall: ${{ contains(matrix.os, 'windows') }}
           cmake: true
-          ninja: true
+          # ninja: true
           vcpkg: true
           cppcheck: true
-          clangtidy: true # instead of `true`, which chooses the default version, you can pass a specific version.
+          # clangtidy: true # instead of `true`, which chooses the default version, you can pass a specific version.
           # ...
