@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-
+      - siamaktavakoli-testing-ci
 jobs:
   Test:
     runs-on: ${{ matrix.os }}
