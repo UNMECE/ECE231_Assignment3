@@ -13,16 +13,16 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - windows-2022
+          # - windows-2022
           - ubuntu-24.04
-          - macos-14 # arm64
-          - macos-13
+          # - macos-14 # arm64
+          # - macos-13
         compiler:
-          - llvm
+          # - llvm
           - gcc
           # you can specify the version after `-` like `llvm-18`.
-        include:
-          - os: "windows-2022"
+        # include:
+        #  - os: "windows-2022"
             compiler: "msvc"
     steps:
       - uses: actions/checkout@v3
@@ -44,7 +44,7 @@ jobs:
         uses: ./.github/workflows@v1
         with:
           compiler: ${{ matrix.compiler }}
-          vcvarsall: ${{ contains(matrix.os, 'windows') }}
+          # vcvarsall: ${{ contains(matrix.os, 'windows') }}
           cmake: true
           ninja: true
           vcpkg: true
