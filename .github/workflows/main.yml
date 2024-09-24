@@ -1,6 +1,4 @@
 name: C/C++ CI
-#runs:
-  #using: 'node16'
 on:
   push:
       branches:
