@@ -18,7 +18,7 @@ public:
 
 protected:
   void unitTest(void) {
-    system("./main >nul 2>nul");
+    system("./output4Test >nul 2>nul");
   }
 };
 
